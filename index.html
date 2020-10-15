@@ -13,10 +13,10 @@
   <title>PLATZI CONF HAWAI!</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="57">
 
   <!-- H E A D E R -->
-  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
 
       <a class="navbar-brand" href="#">
@@ -27,21 +27,21 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav ml-auto">
           <!--ml-auto => Ajusta automaticamente el margen, y tira el elemento hacia el lado contrario -->
-          <li class="nav-item active">
-            <a class="nav-link" href="#">The conference</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#main">The conference</a>
             <!--<span class="sr-only">(current)</span>-->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Speakers</a>
+            <a class="nav-link" href="#speakers">Speakers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Date and place</a>
+            <a class="nav-link" href="#place-time">Date and place</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Become a speaker</a>
+            <a class="nav-link" href="#conviertete-en-orador">Become a speaker</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-platzi" href="#">Buy a ticket</a>
@@ -164,7 +164,7 @@
         <img src="./img/honolulu.jpg" alt="honolulu">
       </div>
       <div class="col-12 col-lg-6 pt-4 pb-4">
-        <h2>Honolulu - Octubre 2025</h2>
+        <h2>Honolulu - <abbr title="Date may be changed due to Covid-19">October - 2025</abbr></h2>
         <p>Honolulu is the capital and
           largest city of the U.S. state of Hawaii.
           It is an unincorporated part of and the county seat of the City and County of
@@ -183,7 +183,7 @@
 </section>
 <!-- /D A T E   A N D    P L A C E  -->
 <!-- B E   A  S P E A  K E R  -->
-<section class="conviertete-en-orador pt-2 pb-2">
+<section id="conviertete-en-orador" class="pt-2 pb-2">
   <div class="container">
     <div class="row">
       <div class="col text-uppercase text-center">
@@ -193,7 +193,7 @@
     </div>
   <div class="row">
     <div class="col text-center">
-      <p>Sign up as ignite speaker.
+      <p>Sign up as <abbr title="5 minutes talks">ignite</abbr> speaker.
       Tell us what you want to talk about!</p>
     </div>
   </div>
