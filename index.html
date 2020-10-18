@@ -44,7 +44,7 @@
             <a class="nav-link" href="#conviertete-en-orador">Become a speaker</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-platzi" href="#">Buy a ticket</a>
+            <a class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#modalCompra">Buy a ticket</a>
           </li>
         </ul>
       </div>
@@ -78,7 +78,7 @@
             We will wait for you!
            </p>
            <a href="#" class="btn btn-outline-light">I want to be a speaker</a>
-           <button type="button" name="button" class="btn btn-platzi">Buy tickets</button>
+           <button type="button" name="button" class="btn btn-platzi" data-toggle="modal" data-target="#modalCompra">Buy tickets</button>
           </div>
         </div>
 
@@ -254,8 +254,42 @@
     </div>
 
   </footer>
-  <!-- /F O O T E R -->
-
+<!-- /F O O T E R -->
+<!-- Modal -->
+  <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Buy tickets</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="" action="index.html" method="post">
+            <div class="form-row">
+              <div class="form-group col">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                  </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="alert alert-warning" role="alert">
+            You will receive a confirmation mail if you are selected as a speaker!!
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-platzi">Buy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal -->
 
 
 
